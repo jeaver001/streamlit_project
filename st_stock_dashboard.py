@@ -70,7 +70,7 @@ def main():
             stock_MAX = ticker_data.history(period='max', interval = '1d', rounding = True)
         
             with st.container(): 
-                col_summary1, col_summary3, col_summary2, col_summary4, col_chart = st.columns([0.125, 0.125, 0.125, 0.125, 0.5])
+                col_summary1, col_summary3, col_summary2, col_summary4, col_chart = st.columns([[0.15, 0.15, 0.15, 0.15, 0.4]])
                 with col_summary1:
                 
                     stock_table1 = ['Previous Close', 'Open', 'Bid', 'Ask',"Day's Range", "52-Week Range",
